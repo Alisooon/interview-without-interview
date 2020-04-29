@@ -13,7 +13,8 @@ var path = new Path.Circle({
 });
 
 // The amount of circles we want to make:
-var count = 90;
+var count = 50;
+var scale = 0.5;
 
 // Create a symbol, which we will use to place instances of later:
 var petal = new Raster("./assets/img/petal.png");
@@ -33,7 +34,7 @@ for (var i = 0; i < count; i++) {
   // The center position is a random point in the view:
   var center = Point.random() * view.size;
   var placedSymbol = symbol.place(center);
-  placedSymbol.scale((i * 1) / count);
+  placedSymbol.scale((i * scale) / count);
   placedSymbol.rotate(220);
 }
 
