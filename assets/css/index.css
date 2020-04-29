@@ -1,0 +1,76 @@
+html,
+body {
+  height: 100%;
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+  width: 100%;
+  height: 100%;
+}
+
+.person {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.cube-row {
+  display: grid;
+  grid-template-columns: repeat(5, 30px);
+  align-items: end;
+}
+
+.cube-column {
+  width: 30px;
+  display: grid;
+  grid-auto-rows: 35px;
+}
+
+.cube {
+  height: 30px;
+  width: 30px;
+
+  background-image: url("../img/cube-blue.png");
+  background-size: contain;
+}
+
+.cube.hidden {
+  visibility: hidden;
+}
+
+.cubes-blue .cube {
+  background-image: url("../img/cube-blue.png");
+}
+
+.cubes-red .cube {
+  background-image: url("../img/cube-red.png");
+}
+
+.left-side {
+  position: absolute;
+  z-index: 999;
+  bottom: 50px;
+  left: 50px;
+}
+
+.right-side {
+  position: absolute;
+  z-index: 999;
+  bottom: 50px;
+  right: 50px;
+}
+
+.petal {
+  width: 0%;
+  height: 0%;
+  left: 100px;
+}
+
+.my-canvas {
+  background: url("../img/bgd 1.png");
+}

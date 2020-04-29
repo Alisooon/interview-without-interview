@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+
+  <body>
+    <canvas id="my-canvas" class="my-canvas" resize></canvas>
+    <img src="./assets/img/person.png" class="person" alt="" />
+
+    <div class="cube-row cubes-blue left-side">
+      <div class="cube-column">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube hidden"></div>
+        <div class="cube"></div>
+      </div>
+      <div class="cube-column">
+        <div class="cube"></div>
+
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+      <div class="cube-column">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+      <div class="cube-column">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+      <div class="cube-column">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+    </div>
+
+    <div class="cube-row cubes-red right-side">
+      <div class="cube-column">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+      <div class="cube-column">
+        <div class="cube"></div>
+
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+      <div class="cube-column">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+      <div class="cube-column">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+      <div class="cube-column">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+    </div>
+
+    <!-- Load the Paper.js library -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js"
+    ></script>
+    <!-- Define inlined PaperScript associate it with my-canvas -->
+
+    <script
+      type="text/paperscript"
+      canvas="my-canvas"
+      src="./assets/js/index.js"
+    ></script>
+  </body>
+</html>
